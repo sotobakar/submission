@@ -41,6 +41,7 @@ main{
     display: flex;
     padding: 1em;
     margin-bottom: 1em;
+    border-radius: 1em;
 }
 article{
     background-color: #FFFFFF;
@@ -49,11 +50,15 @@ article{
     flex-direction: column;
     margin-right:1em;
     padding: 0.3em;
+    border-radius: 1em;
 }
 aside{
 
     width: 25%;
     height: 50%;
+}
+aside section{
+    border-radius: 1em;
 }
 section ul li{
     text-decoration: none;
@@ -115,6 +120,9 @@ aside section{
 footer{
     background-color: #3D9970; 
     margin: 0 10%;
+    padding: 0 0.3em;
+    color: white;
+    border-radius: 1em;
 }
 footer span{
     text-align: right;
@@ -123,4 +131,29 @@ footer span{
     margin-top:auto;
     margin-bottom: auto;
     font-family: 'Lilita One',cursive;
+    color: black;
 }
+@media only screen and (max-width: 600px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    article section div{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  article section div div ul li{
+    list-style-type:none;
+    margin:0 1em 0 0;
+    font-family: 'Lilita One',cursive;
+  }
+  article section div div ul{
+    padding-left:0 ;
+  }
+  article section div div h1{
+    margin-bottom:0 ;
+  }
+  article section div div ul li:hover{
+    cursor: pointer;
+  }
