@@ -146,8 +146,21 @@ footer span{
         display: flex;
         flex-direction: column;
     }
+    header p{
+        text-align: center;
+    }
+    header nav{
+        margin-left: -3em;
+    }
     aside div section {
         overflow: auto;
+    }
+    article{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+        margin-top: 1em;
     }
   }
   article section div div ul li{
